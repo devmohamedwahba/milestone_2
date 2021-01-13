@@ -12,6 +12,7 @@ Your choice: """
 
 
 def menu():
+    database.create_book_table()
     user_input = input(USER_CHOICE)
     print(user_input)
     while user_input != 'q':
